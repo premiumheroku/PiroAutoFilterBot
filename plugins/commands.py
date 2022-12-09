@@ -150,7 +150,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url='https://t.me/rai_info17') ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👑', url='https://t.me/jk_ser'),
+                                              InlineKeyboardButton('𝙹𝙾𝙸𝙽 𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+38DONYs9rQY2MTc1') ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
@@ -160,7 +161,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url='https://t.me/rai_info17') ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👑', url='https://t.me/jk_ser'),
+                                              InlineKeyboardButton('𝙹𝙾𝙸𝙽 𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+38DONYs9rQY2MTc1') ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except Exception as e:
@@ -255,7 +257,8 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MOVIE CHANNEL♻️', url='https://t.me/+38DONYs9rQY2MTc1') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👑', url='https://t.me/jk_ser'),
+                                              InlineKeyboardButton('𝙹𝙾𝙸𝙽 𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+38DONYs9rQY2MTc1') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
