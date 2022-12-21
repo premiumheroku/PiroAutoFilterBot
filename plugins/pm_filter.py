@@ -68,7 +68,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖{get_size(file.file_size)}🔮{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🔖{get_size(file.file_size)}📁{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -365,7 +365,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url='https://t.me/rai_info17') ] ] )
+        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MAIN CHANNEL♻️', url='https://t.me/jk_movies_area') ] ] )
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -379,7 +379,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url='https://t.me/rai_info17') ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MAIN CHANNEL♻️', url='https://t.me/jk_movies_area') ] ] ),
                     protect_content=True if ident == "filep" else False 
                 )
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -411,7 +411,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
-        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MOVIE CHANNEL♻️', url='https://t.me/+38DONYs9rQY2MTc1') ] ] )
+        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MOVIE CHANNEL♻️', url='https://t.me/+ejtnDditSdZjY2Rl') ] ] )
         
         
         await query.answer()
@@ -419,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MOVIE CHANNEL♻️', url='https://t.me/+38DONYs9rQY2MTc1') ] ] ),
+            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('♻️JOIN MOVIE CHANNEL♻️', url='https://t.me/+ejtnDditSdZjY2Rl') ] ] ),
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
@@ -675,7 +675,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖{get_size(file.file_size)}🔮{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🔖{get_size(file.file_size)}📁{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -684,11 +684,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖{get_size(file.file_size)}🔮{file.file_name}",
+                    text=f"🔖{get_size(file.file_size)}📁{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🔖{get_size(file.file_size)}🔮{file.file_name}",
+                    text=f"🔖{get_size(file.file_size)}📁{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
             ]
@@ -860,7 +860,7 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(300)
+                            await asyncio.sleep(3000)
                             await knd3.delete()
                             await message.delete()
 
