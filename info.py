@@ -38,6 +38,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # Others
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001729830342'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+FCUs6o6FXSZkNjc6')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'True')), False)
